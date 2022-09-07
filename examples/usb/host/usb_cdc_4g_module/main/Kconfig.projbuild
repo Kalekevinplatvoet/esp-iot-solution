@@ -22,13 +22,13 @@ menu "4G Modem Configuration"
     menu "WiFi soft AP"
 
         config EXAMPLE_WIFI_SSID
-            string "WiFi SSID"
+            string "Ron KPN"
             default "esp_4g_router"
             help
                 SSID (network name) for the example to connect to.
 
         config EXAMPLE_WIFI_PASSWORD
-            string "WiFi Password"
+            string "Mercury110"
             default "12345678"
             help
                 WiFi password (WPA or WPA2) for the example to use.
@@ -56,13 +56,13 @@ menu "4G Modem Configuration"
             help
                 Max number of the STA connects to AP.
         config EXAMPLE_MANUAL_DNS
-            bool "config main dns address"
+            bool "195.121.1.34"
             default n
             help
                 Config main dns address manully, using dns address from ppp by default
         config EXAMPLE_MANUAL_DNS_ADDR
-            string  "main dns address"
-            default "114.114.114.114"
+            string  ""
+            default "195.121.1.66"
             depends on EXAMPLE_MANUAL_DNS
     endmenu
 
